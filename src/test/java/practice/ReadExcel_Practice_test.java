@@ -15,10 +15,10 @@ public class ReadExcel_Practice_test
 	{
 		FileInputStream fis = new FileInputStream("./src/test/resources/files/Testdata.xlsx");
 		Workbook wb=WorkbookFactory.create(fis);
-		Sheet sh = wb.getSheet("sheet1");
+		Sheet sh = wb.getSheet("Softwares");
 		Row row = sh.getRow(0);
 		 String cel = row.getCell(0).getStringCellValue();
-		 row.getCell(2).getNumericCellValue();
+		 row.getCell(1).getStringCellValue();
 		// row.getCell(1);
 		System.out.println(cel);
 		

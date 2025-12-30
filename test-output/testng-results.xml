@@ -2,16 +2,47 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-29T17:51:40 IST" name="Default suite" finished-at="2025-12-29T17:51:45 IST" duration-ms="4997">
+  <suite started-at="2025-12-30T18:09:38 IST" name="Default suite" finished-at="2025-12-30T18:10:04 IST" duration-ms="25888">
     <groups>
     </groups>
-    <test started-at="2025-12-29T17:51:40 IST" name="Default test" finished-at="2025-12-29T17:51:45 IST" duration-ms="4997">
-      <class name="practice.Cmdlyn_Practice_1">
-        <test-method signature="cmdLine()[pri:0, instance:practice.Cmdlyn_Practice_1@5656be13]" started-at="2025-12-29T17:51:40 IST" name="cmdLine" finished-at="2025-12-29T17:51:45 IST" duration-ms="4880" status="PASS">
+    <test started-at="2025-12-30T18:09:38 IST" name="Default test" finished-at="2025-12-30T18:10:04 IST" duration-ms="25888">
+      <class name="organization.CreateOrgWithMandatoryFields_test">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:organization.CreateOrgWithMandatoryFields_test@229f66ed]" started-at="2025-12-30T18:09:37 IST" name="connectToDB" finished-at="2025-12-30T18:09:38 IST" duration-ms="431" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cmdLine -->
-      </class> <!-- practice.Cmdlyn_Practice_1 -->
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:organization.CreateOrgWithMandatoryFields_test@229f66ed]" started-at="2025-12-30T18:09:38 IST" name="launchBrowser" finished-at="2025-12-30T18:09:41 IST" duration-ms="3406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:organization.CreateOrgWithMandatoryFields_test@229f66ed]" started-at="2025-12-30T18:09:41 IST" name="loginToApp" finished-at="2025-12-30T18:09:42 IST" duration-ms="496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="createOrgWithMandatoryFields_test()[pri:0, instance:organization.CreateOrgWithMandatoryFields_test@229f66ed]" started-at="2025-12-30T18:09:42 IST" name="createOrgWithMandatoryFields_test" finished-at="2025-12-30T18:09:54 IST" duration-ms="12369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgWithMandatoryFields_test -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:organization.CreateOrgWithMandatoryFields_test@229f66ed]" started-at="2025-12-30T18:09:54 IST" name="logoutFromApp" finished-at="2025-12-30T18:10:03 IST" duration-ms="8926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:organization.CreateOrgWithMandatoryFields_test@229f66ed]" started-at="2025-12-30T18:10:03 IST" name="closeBrowser" finished-at="2025-12-30T18:10:04 IST" duration-ms="576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="disConnectDB()[pri:0, instance:organization.CreateOrgWithMandatoryFields_test@229f66ed]" started-at="2025-12-30T18:10:04 IST" name="disConnectDB" finished-at="2025-12-30T18:10:04 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectDB -->
+      </class> <!-- organization.CreateOrgWithMandatoryFields_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
