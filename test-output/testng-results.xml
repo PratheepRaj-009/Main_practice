@@ -1,141 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-31T00:33:19 IST" name="Suite" finished-at="2025-12-31T00:33:54 IST" duration-ms="35266">
+  <suite started-at="2025-12-31T11:15:28 IST" name="Suite" finished-at="2025-12-31T11:15:28 IST" duration-ms="116">
     <groups>
+      <group name="smoke">
+        <method signature="Demo_test.demo1()[pri:0, instance:testNG_Practice.Demo_test@3590fc5b]" name="demo1" class="testNG_Practice.Demo_test"/>
+        <method signature="Demo_test.demo3()[pri:0, instance:testNG_Practice.Demo_test@3590fc5b]" name="demo3" class="testNG_Practice.Demo_test"/>
+        <method signature="Disp_test.disp1()[pri:0, instance:testNG_Practice.Disp_test@4802796d]" name="disp1" class="testNG_Practice.Disp_test"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-12-31T00:33:19 IST" name="Test2" finished-at="2025-12-31T00:33:53 IST" duration-ms="33645">
-      <class name="settings.ChangingPassword2_test">
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:settings.ChangingPassword2_test@641856]" started-at="2025-12-31T00:33:18 IST" name="connectToDB" finished-at="2025-12-31T00:33:19 IST" duration-ms="659" status="PASS">
+    <test started-at="2025-12-31T11:15:28 IST" name="Test" finished-at="2025-12-31T11:15:28 IST" duration-ms="116">
+      <class name="testNG_Practice.Disp_test">
+        <test-method signature="disp1()[pri:0, instance:testNG_Practice.Disp_test@4802796d]" started-at="2025-12-31T11:15:28 IST" name="disp1" finished-at="2025-12-31T11:15:28 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:settings.ChangingPassword2_test@641856]" started-at="2025-12-31T00:33:20 IST" name="launchBrowser" finished-at="2025-12-31T00:33:34 IST" duration-ms="13577" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- disp1 -->
+      </class> <!-- testNG_Practice.Disp_test -->
+      <class name="testNG_Practice.Demo_test">
+        <test-method signature="demo1()[pri:0, instance:testNG_Practice.Demo_test@3590fc5b]" started-at="2025-12-31T11:15:28 IST" name="demo1" finished-at="2025-12-31T11:15:28 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:settings.ChangingPassword2_test@641856]" started-at="2025-12-31T00:33:34 IST" name="loginToApp" finished-at="2025-12-31T00:33:38 IST" duration-ms="4392" status="PASS">
+        </test-method> <!-- demo1 -->
+        <test-method signature="demo3()[pri:0, instance:testNG_Practice.Demo_test@3590fc5b]" started-at="2025-12-31T11:15:28 IST" name="demo3" finished-at="2025-12-31T11:15:28 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="changingPassword2_test()[pri:0, instance:settings.ChangingPassword2_test@641856]" started-at="2025-12-31T00:33:38 IST" name="changingPassword2_test" finished-at="2025-12-31T00:33:46 IST" duration-ms="8279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changingPassword2_test -->
-        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:settings.ChangingPassword2_test@641856]" started-at="2025-12-31T00:33:46 IST" name="logoutFromApp" finished-at="2025-12-31T00:33:51 IST" duration-ms="4340" status="FAIL">
-          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
-            <message>
-              <![CDATA[Origin element [object Object] {"element-6066-11e4-a52e-4f735466cecf":"7aae0c09-8af4-403b-9b42-1868dae7fa9a"} is not displayed
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [cc66ebf5-5bee-49d2-8ce2-4b42ea75d0e6, actions {actions=[org.openqa.selenium.interactions.Sequence@9562ed9]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0.1, moz:accessibilityChecks: false, moz:buildID: 20251217121356, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 26456, moz:profile: C:\Users\PRATHE~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: cc66ebf5-5bee-49d2-8ce2-4b42ea75d0e6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Origin element [object Object] {"element-6066-11e4-a52e-4f735466cecf":"7aae0c09-8af4-403b-9b42-1868dae7fa9a"} is not displayed
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [cc66ebf5-5bee-49d2-8ce2-4b42ea75d0e6, actions {actions=[org.openqa.selenium.interactions.Sequence@9562ed9]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0.1, moz:accessibilityChecks: false, moz:buildID: 20251217121356, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 26456, moz:profile: C:\Users\PRATHE~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: cc66ebf5-5bee-49d2-8ce2-4b42ea75d0e6
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:630)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
-at genric_utilities.WebdriverUtilities.movetoelementAndClick(WebdriverUtilities.java:280)
-at vtiger_POM.Logout_page.logoutJSE(Logout_page.java:39)
-at genric_utilities.BaseClass.logoutFromApp(BaseClass.java:119)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:settings.ChangingPassword2_test@641856]" started-at="2025-12-31T00:33:51 IST" name="closeBrowser" finished-at="2025-12-31T00:33:53 IST" duration-ms="2247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="disConnectDB()[pri:0, instance:settings.ChangingPassword2_test@641856]" started-at="2025-12-31T00:33:54 IST" name="disConnectDB" finished-at="2025-12-31T00:33:55 IST" duration-ms="19" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disConnectDB -->
-      </class> <!-- settings.ChangingPassword2_test -->
-    </test> <!-- Test2 -->
-    <test started-at="2025-12-31T00:33:19 IST" name="Test1" finished-at="2025-12-31T00:33:54 IST" duration-ms="35266">
-      <class name="settings.ChangingPassword2_test">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:settings.ChangingPassword2_test@2c177f9e]" started-at="2025-12-31T00:33:20 IST" name="launchBrowser" finished-at="2025-12-31T00:33:25 IST" duration-ms="5087" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:settings.ChangingPassword2_test@2c177f9e]" started-at="2025-12-31T00:33:25 IST" name="loginToApp" finished-at="2025-12-31T00:33:31 IST" duration-ms="5619" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="changingPassword2_test()[pri:0, instance:settings.ChangingPassword2_test@2c177f9e]" started-at="2025-12-31T00:33:31 IST" name="changingPassword2_test" finished-at="2025-12-31T00:33:41 IST" duration-ms="10216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changingPassword2_test -->
-        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:settings.ChangingPassword2_test@2c177f9e]" started-at="2025-12-31T00:33:41 IST" name="logoutFromApp" finished-at="2025-12-31T00:33:54 IST" duration-ms="13044" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:settings.ChangingPassword2_test@2c177f9e]" started-at="2025-12-31T00:33:54 IST" name="closeBrowser" finished-at="2025-12-31T00:33:54 IST" duration-ms="377" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- settings.ChangingPassword2_test -->
-    </test> <!-- Test1 -->
+        </test-method> <!-- demo3 -->
+      </class> <!-- testNG_Practice.Demo_test -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
