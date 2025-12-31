@@ -17,4 +17,9 @@ public class Demo_test extends BaseClass
 	{
 		System.out.println("testing demo 2");
 	}
+	@Test (groups = "smoke")
+	public void demo3()
+	{
+		System.out.println("im demo 3");
+	}
 }

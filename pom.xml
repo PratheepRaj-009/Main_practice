@@ -88,7 +88,7 @@
         <version>3.5.4</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>groupExecution.xml</suiteXmlFile>
+            <suiteXmlFile>groupJankins.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
