@@ -17,10 +17,12 @@ public class Cmdlyn_Practice_1
 		System.out.println(Url);
 		System.out.println(UN);
 		System.out.println(PWD);
+		if(Browser.equals("chrome"))
+		{
 		WebDriver driver = new ChromeDriver();
 		driver.get(Url);
 		System.out.println(driver.getTitle());
-		
+		}
 		
 	}
 }
