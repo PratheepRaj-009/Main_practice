@@ -1,32 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-31T11:15:28 IST" name="Suite" finished-at="2025-12-31T11:15:28 IST" duration-ms="116">
+  <suite started-at="2026-01-08T13:32:49 IST" name="Default suite" finished-at="2026-01-08T13:33:09 IST" duration-ms="19896">
     <groups>
-      <group name="smoke">
-        <method signature="Demo_test.demo1()[pri:0, instance:testNG_Practice.Demo_test@3590fc5b]" name="demo1" class="testNG_Practice.Demo_test"/>
-        <method signature="Demo_test.demo3()[pri:0, instance:testNG_Practice.Demo_test@3590fc5b]" name="demo3" class="testNG_Practice.Demo_test"/>
-        <method signature="Disp_test.disp1()[pri:0, instance:testNG_Practice.Disp_test@4802796d]" name="disp1" class="testNG_Practice.Disp_test"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-12-31T11:15:28 IST" name="Test" finished-at="2025-12-31T11:15:28 IST" duration-ms="116">
-      <class name="testNG_Practice.Disp_test">
-        <test-method signature="disp1()[pri:0, instance:testNG_Practice.Disp_test@4802796d]" started-at="2025-12-31T11:15:28 IST" name="disp1" finished-at="2025-12-31T11:15:28 IST" duration-ms="17" status="PASS">
+    <test started-at="2026-01-08T13:32:49 IST" name="Default test" finished-at="2026-01-08T13:33:09 IST" duration-ms="19896">
+      <class name="finalMock.Electronics_Flipkart">
+        <test-method signature="test()[pri:0, instance:finalMock.Electronics_Flipkart@73a1e9a9]" started-at="2026-01-08T13:32:49 IST" name="test" finished-at="2026-01-08T13:33:09 IST" duration-ms="19787" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- disp1 -->
-      </class> <!-- testNG_Practice.Disp_test -->
-      <class name="testNG_Practice.Demo_test">
-        <test-method signature="demo1()[pri:0, instance:testNG_Practice.Demo_test@3590fc5b]" started-at="2025-12-31T11:15:28 IST" name="demo1" finished-at="2025-12-31T11:15:28 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo1 -->
-        <test-method signature="demo3()[pri:0, instance:testNG_Practice.Demo_test@3590fc5b]" started-at="2025-12-31T11:15:28 IST" name="demo3" finished-at="2025-12-31T11:15:28 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo3 -->
-      </class> <!-- testNG_Practice.Demo_test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test -->
+      </class> <!-- finalMock.Electronics_Flipkart -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
