@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-08T13:32:49 IST" name="Default suite" finished-at="2026-01-08T13:33:09 IST" duration-ms="19896">
+  <suite started-at="2026-01-28T22:35:37 IST" name="Default suite" finished-at="2026-01-28T22:36:17 IST" duration-ms="39923">
     <groups>
     </groups>
-    <test started-at="2026-01-08T13:32:49 IST" name="Default test" finished-at="2026-01-08T13:33:09 IST" duration-ms="19896">
-      <class name="finalMock.Electronics_Flipkart">
-        <test-method signature="test()[pri:0, instance:finalMock.Electronics_Flipkart@73a1e9a9]" started-at="2026-01-08T13:32:49 IST" name="test" finished-at="2026-01-08T13:33:09 IST" duration-ms="19787" status="PASS">
+    <test started-at="2026-01-28T22:35:37 IST" name="Default test" finished-at="2026-01-28T22:36:17 IST" duration-ms="39923">
+      <class name="practice.Naukri_com">
+        <test-method signature="updateResume()[pri:0, instance:practice.Naukri_com@73a1e9a9]" started-at="2026-01-28T22:35:37 IST" name="updateResume" finished-at="2026-01-28T22:36:17 IST" duration-ms="39798" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- finalMock.Electronics_Flipkart -->
+        </test-method> <!-- updateResume -->
+      </class> <!-- practice.Naukri_com -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
