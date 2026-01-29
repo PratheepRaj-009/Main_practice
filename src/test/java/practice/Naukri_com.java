@@ -48,7 +48,7 @@ public class Naukri_com
 		if(driver.findElement(By.xpath("//span[text()='Upload resume']")).getText().contains("Upload resume"))
 		{
 			driver.findElement(By.xpath("//span[text()='Upload resume']")).click();
-			StringSelection ss=new StringSelection("C:\\Users\\PRATHEEP RAJ S\\Downloads\\Pratheepraj-S Automation (1).pdf");
+			StringSelection ss=new StringSelection("C:\\Users\\PRATHEEP RAJ S\\Downloads\\Pratheepraj-S Automation (2).pdf\"");
 			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 			System.out.println("fghj");
 			Robot rbt=new Robot();
@@ -75,7 +75,7 @@ public class Naukri_com
 //			act.sendKeys(btn,"C:\\Users\\PRATHEEP RAJ S\\Downloads\\might-guy-n2xmbymd7tjjcav0.jpgss").perform();
 		
 			driver.findElement(By.xpath("//input[@value='Update resume']")).click();
-			StringSelection ss=new StringSelection("C:\\Users\\PRATHEEP RAJ S\\Downloads\\Pratheepraj-S Automation (1).pdf"
+			StringSelection ss=new StringSelection("C:\\Users\\PRATHEEP RAJ S\\Downloads\\Pratheepraj-S Automation (2).pdf"
 					+ "");
 			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 			System.out.println("update starts");
