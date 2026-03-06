@@ -14,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 @Listeners(genric_utilities.ListernersImplementationClass.class)
@@ -22,7 +23,7 @@ public class Naukri_com
 	@Test
 	public void updateResume() throws InterruptedException, AWTException {
 		
-
+		String expected="Resume has been successfully uploaded.";
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.naukri.com/");
@@ -48,7 +49,7 @@ public class Naukri_com
 		if(driver.findElement(By.xpath("//span[text()='Upload resume']")).getText().contains("Upload resume"))
 		{
 			driver.findElement(By.xpath("//span[text()='Upload resume']")).click();
-			StringSelection ss=new StringSelection("C:\\Users\\PRATHEEP RAJ S\\Downloads\\Pratheepraj-S Automation (2).pdf\"");
+			StringSelection ss=new StringSelection("\"C:\\Users\\PRATHEEP RAJ S\\OneDrive\\Desktop\\Tek Resume\\fresh\\pratheepkumar561.docx\"");
 			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 			System.out.println("fghj");
 			Robot rbt=new Robot();
@@ -61,6 +62,10 @@ public class Naukri_com
 			Thread.sleep(2000);
 			rbt.keyPress(KeyEvent.VK_ENTER);
 			rbt.keyRelease(KeyEvent.VK_ENTER);
+			String actual = driver.findElement(By.xpath("//p[@class='msg']")).getText();
+			System.err.println(actual);
+			Assert.assertEquals(actual, expected);
+			
 			System.out.println("end");
 			
 		}
@@ -75,10 +80,9 @@ public class Naukri_com
 //			act.sendKeys(btn,"C:\\Users\\PRATHEEP RAJ S\\Downloads\\might-guy-n2xmbymd7tjjcav0.jpgss").perform();
 		
 			driver.findElement(By.xpath("//input[@value='Update resume']")).click();
-			StringSelection ss=new StringSelection("C:\\Users\\PRATHEEP RAJ S\\Downloads\\Pratheepraj-S Automation (2).pdf"
-					+ "");
+			StringSelection ss=new StringSelection("\"C:\\Users\\PRATHEEP RAJ S\\OneDrive\\Desktop\\Tek Resume\\fresh\\pratheepkumar561.docx\"");
 			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-			System.out.println("update starts success");
+			System.out.println("update starts");
 			Robot rbt=new Robot();
 			Thread.sleep(3000);
 			//act.sendKeys(Keys.CONTROL+"v",Keys.ENTER).perform();
@@ -89,7 +93,10 @@ public class Naukri_com
 			Thread.sleep(2000);
 			rbt.keyPress(KeyEvent.VK_ENTER);
 			rbt.keyRelease(KeyEvent.VK_ENTER);
-			System.out.println("update end success");
+			String actual = driver.findElement(By.xpath("//p[@class='msg']")).getText();
+			System.err.println(actual);
+			Assert.assertEquals(actual, expected);
+			System.out.println("update end");
 		
 		}
 		else
