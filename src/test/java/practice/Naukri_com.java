@@ -78,7 +78,7 @@ public class Naukri_com
 			StringSelection ss=new StringSelection("C:\\Users\\PRATHEEP RAJ S\\Downloads\\Pratheepraj-S Automation (2).pdf"
 					+ "");
 			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-			System.out.println("update starts");
+			System.out.println("update starts success");
 			Robot rbt=new Robot();
 			Thread.sleep(3000);
 			//act.sendKeys(Keys.CONTROL+"v",Keys.ENTER).perform();
@@ -89,7 +89,7 @@ public class Naukri_com
 			Thread.sleep(2000);
 			rbt.keyPress(KeyEvent.VK_ENTER);
 			rbt.keyRelease(KeyEvent.VK_ENTER);
-			System.out.println("update end");
+			System.out.println("update end success");
 		
 		}
 		else
