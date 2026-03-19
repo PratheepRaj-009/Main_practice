@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import genric_utilities.PropFileUtils;
 import genric_utilities.WebdriverUtilities;
@@ -16,7 +17,8 @@ import genric_utilities.WebdriverUtilities;
 public class LinkedIn_Resume_Upload
 {
 	static PropFileUtils pUtils=new PropFileUtils();
-	public static void main(String[] args) throws IOException, InterruptedException {
+	@Test
+	public void upload() throws IOException, InterruptedException {
 		
 		WebDriver driver= new ChromeDriver();
 		driver.manage().window().maximize();
