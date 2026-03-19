@@ -42,7 +42,7 @@ public class LinkedIn_Resume_Upload
 		Actions ac = new Actions(driver);
 		ac.scrollToElement(job).perform();
 		driver.findElement(By.xpath("//p[contains(.,'Resumes and job applications data')]")).click();
-		String path = System.getProperty("user.dir")+"/src/test/resources/files/pratheepkumar561.docx";
+		String path = System.getProperty("user.dir")+"/src/test/resources/files/Pratheepraj-S Automation (2).pdf";
 		WebElement ele = driver.findElement(By.xpath("//input[@type='file']"));
 		ele.sendKeys(path);
 		driver.findElement(By.xpath("(//*[name()='svg' and @class='jobs-resume-card__ellipsis-icon'])[2]")).click();
@@ -50,8 +50,8 @@ public class LinkedIn_Resume_Upload
 		/*WebElement del = */driver.findElement(By.xpath("//*[name()='svg']//*[name()='use' and @href='#trash-medium']")).click();
 		//js.executeScript("arguments[0].click()", del);
 		
-		
-	
+		String text = driver.findElement(By.xpath("//div[@class='jobs-application-settings__back']/following-sibling::h1")).getText();
+		System.out.println(text);
 		driver.quit();
 	
 	}
