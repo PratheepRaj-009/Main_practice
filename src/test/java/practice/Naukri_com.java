@@ -17,7 +17,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-//@Listeners(genric_utilities.ListernersImplementationClass.class)
+@Listeners(genric_utilities.ListernersImplementationClass.class)
 public class Naukri_com 
 {
 	@Test
