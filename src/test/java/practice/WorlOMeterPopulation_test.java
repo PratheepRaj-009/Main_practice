@@ -22,7 +22,7 @@ public class WorlOMeterPopulation_test
 		
 		wdu.maximizeWindow(driver);
 		driver.navigate().to("https://www.worldometers.info/world-population/");
-		wdu.implicitWait(driver, Duration.ofSeconds(10));
+		wdu.implicitWait(driver, 15);
 		WebElement country = driver.findElement(By.id("country"));
 		wdu.scrollToElementUsingXandYcoOrdinats(driver, country);
 		//driver.findElement(By.cssSelector("input[title='Search within table']")).sendKeys(expValue);

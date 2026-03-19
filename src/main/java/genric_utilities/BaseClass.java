@@ -85,7 +85,7 @@ public class BaseClass
 		
 		//open application
 		driver.get(Url);
-		wbdUtil.implicitWait(driver, Duration.ofSeconds(10));
+		wbdUtil.implicitWait(driver, 15);
 		System.out.println("browser launched sucessfully");
 
 	}

@@ -63,9 +63,9 @@ public class WebdriverUtilities
 	 * @param driver
 	 * @param sec
 	 */
-	public void implicitWait(WebDriver driver,Duration sec)
+	public void implicitWait(WebDriver driver,long i)
 	{
-		driver.manage().timeouts().implicitlyWait(sec);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(i));
 	}
 	
 	/**

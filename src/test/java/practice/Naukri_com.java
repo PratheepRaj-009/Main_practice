@@ -17,7 +17,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-@Listeners(genric_utilities.ListernersImplementationClass.class)
+//@Listeners(genric_utilities.ListernersImplementationClass.class)
 public class Naukri_com 
 {
 	@Test
@@ -48,20 +48,23 @@ public class Naukri_com
 		try {
 		if(driver.findElement(By.xpath("//span[text()='Upload resume']")).getText().contains("Upload resume"))
 		{
-			driver.findElement(By.xpath("//span[text()='Upload resume']")).click();
-			StringSelection ss=new StringSelection("\"C:\\Users\\PRATHEEP RAJ S\\OneDrive\\Desktop\\Tek Resume\\fresh\\pratheepkumar561.docx\"");
-			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-			System.out.println("fghj");
-			Robot rbt=new Robot();
-			Thread.sleep(3000);
-			//act.sendKeys(Keys.CONTROL+"v",Keys.ENTER).perform();
-			rbt.keyPress(KeyEvent.VK_CONTROL);
-			rbt.keyPress(KeyEvent.VK_V);
-			rbt.keyRelease(KeyEvent.VK_V);
-			rbt.keyRelease(KeyEvent.VK_CONTROL);
-			Thread.sleep(2000);
-			rbt.keyPress(KeyEvent.VK_ENTER);
-			rbt.keyRelease(KeyEvent.VK_ENTER);
+			String path = System.getProperty("user.dir")+"./src/test/resources/files/Pratheepraj-S Automation (2).pdf";
+			WebElement update = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
+			update.sendKeys(path);
+			
+//			StringSelection ss=new StringSelection("\"C:\\Users\\PRATHEEP RAJ S\\OneDrive\\Desktop\\Tek Resume\\fresh\\pratheepkumar561.docx\"");
+//			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+//			System.out.println("fghj");
+//			Robot rbt=new Robot();
+//			Thread.sleep(3000);
+//			//act.sendKeys(Keys.CONTROL+"v",Keys.ENTER).perform();
+//			rbt.keyPress(KeyEvent.VK_CONTROL);
+//			rbt.keyPress(KeyEvent.VK_V);
+//			rbt.keyRelease(KeyEvent.VK_V);
+//			rbt.keyRelease(KeyEvent.VK_CONTROL);
+//			Thread.sleep(2000);
+//			rbt.keyPress(KeyEvent.VK_ENTER);
+//			rbt.keyRelease(KeyEvent.VK_ENTER);
 			String actual = driver.findElement(By.xpath("//p[@class='msg']")).getText();
 			System.err.println(actual);
 			Assert.assertEquals(actual, expected);
@@ -74,30 +77,26 @@ public class Naukri_com
 		{
 		if(driver.findElement(By.xpath("//input[@value='Update resume']")).getAttribute("value").equals("Update resume"))
 		{
-//			System.out.println("sdfgh");
-//			WebElement btn = driver.findElement(By.xpath("//input[@value='Update resume']"));
-//			//jse.executeScript("arguments[0].click();",btn);
-//			act.sendKeys(btn,"C:\\Users\\PRATHEEP RAJ S\\Downloads\\might-guy-n2xmbymd7tjjcav0.jpgss").perform();
-		
-			driver.findElement(By.xpath("//input[@value='Update resume']")).click();
-			StringSelection ss=new StringSelection("\"C:\\Users\\PRATHEEP RAJ S\\OneDrive\\Desktop\\Tek Resume\\fresh\\pratheepkumar561.docx\"");
-			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-			System.out.println("update starts");
-			Robot rbt=new Robot();
-			Thread.sleep(3000);
-			//act.sendKeys(Keys.CONTROL+"v",Keys.ENTER).perform();
-			rbt.keyPress(KeyEvent.VK_CONTROL);
-			rbt.keyPress(KeyEvent.VK_V);
-			rbt.keyRelease(KeyEvent.VK_V);
-			rbt.keyRelease(KeyEvent.VK_CONTROL);
-			Thread.sleep(2000);
-			rbt.keyPress(KeyEvent.VK_ENTER);
-			rbt.keyRelease(KeyEvent.VK_ENTER);
+			String path = System.getProperty("user.dir")+"./src/test/resources/files/Pratheepraj-S Automation (2).pdf";
+			WebElement update = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
+			update.sendKeys(path);
+//			StringSelection ss=new StringSelection("\"C:\\Users\\PRATHEEP RAJ S\\OneDrive\\Desktop\\Tek Resume\\fresh\\pratheepkumar561.docx\"");
+//			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+//			System.out.println("update starts");
+//			Robot rbt=new Robot();
+//			Thread.sleep(3000);
+//			rbt.keyPress(KeyEvent.VK_CONTROL);
+//			rbt.keyPress(KeyEvent.VK_V);
+//			rbt.keyRelease(KeyEvent.VK_V);
+//			rbt.keyRelease(KeyEvent.VK_CONTROL);
+//			Thread.sleep(2000);
+//			rbt.keyPress(KeyEvent.VK_ENTER);
+//			rbt.keyRelease(KeyEvent.VK_ENTER);
 			String actual = driver.findElement(By.xpath("//p[@class='msg']")).getText();
 			System.err.println(actual);
 			Assert.assertEquals(actual, expected);
 			System.out.println("update end");
-		
+	
 		}
 		else
 		{
@@ -113,7 +112,7 @@ public class Naukri_com
 		//driver.close();
 	
 		Thread.sleep(5000);
-		//driver.quit();
+		driver.quit();
 	
 	
 	}

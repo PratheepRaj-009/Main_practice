@@ -89,7 +89,7 @@ public class Flipkart_BaseClass
 		
 		//open application
 		driver.get("https://www.flipkart.com/");
-		wbdUtil.implicitWait(driver, Duration.ofSeconds(10));
+		wbdUtil.implicitWait(driver, 15);
 		System.out.println("browser launched sucessfully");
 
 	}

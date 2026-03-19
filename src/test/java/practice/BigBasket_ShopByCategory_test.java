@@ -50,7 +50,7 @@ public class BigBasket_ShopByCategory_test
 			 driver = new FirefoxDriver(ff_options);
 		}
 		driver.get("https://www.bigbasket.com/");
-		wbdutil.implicitWait(driver, Duration.ofSeconds(10));
+		wbdutil.implicitWait(driver, 15);
 		
 		driver.findElement(By.xpath("//button[@id='headlessui-menu-button-:Ramkj6:']")).click();
 		List<WebElement> allcategory = driver.findElements(By.xpath("//button[@id='headlessui-menu-button-:Ramkj6:']/following-sibling::div//li[@role='none']"));
