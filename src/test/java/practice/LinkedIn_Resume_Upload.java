@@ -29,13 +29,13 @@ public class LinkedIn_Resume_Upload
 		driver.findElement(By.id("password")).sendKeys(pUtils.readDataFromResPropertyFile("password"));
 		driver.findElement(By.xpath("//button[@data-litms-control-urn='login-submit']")).click();
 		try {
-			driver.findElement(By.xpath("//*[name()='svg' and @id='person-accent-4']/following-sibling::img[contains(@src,'https://media.licdn.com/dms/image/v2/D5603AQGrbPwdEViStA/profile')]")).click();
+			driver.findElement(By.xpath("//header//*[name()='svg' and @id='person-accent-4']/following-sibling::img[contains(@src,'https://media.licdn.com/dms/image/v2/D5603AQGrbPwdEViStA/profile')]")).click();
 			
 		}
 		catch(Exception e)
 		{
 			driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-border'and @role='presentation']")).click();
-			driver.findElement(By.xpath("//*[name()='svg' and @id='person-accent-4']/following-sibling::img[contains(@src,'https://media.licdn.com/dms/image/v2/D5603AQGrbPwdEViStA/profile')]")).click();
+			driver.findElement(By.xpath("//header//*[name()='svg' and @id='person-accent-4']/following-sibling::img[contains(@src,'https://media.licdn.com/dms/image/v2/D5603AQGrbPwdEViStA/profile')]")).click();
 		}
 		
 		driver.findElement(By.xpath("//a[contains(.,'Settings & Privacy')]")).click();
