@@ -16,7 +16,8 @@ import genric_utilities.WebdriverUtilities;
 
 public class LinkedIn_Resume_Upload
 {
-	static PropFileUtils pUtils=new PropFileUtils();
+	PropFileUtils pUtils=new PropFileUtils();
+	WebdriverUtilities wutils= new WebdriverUtilities();
 	@Test
 	public void upload() throws IOException, InterruptedException {
 		
@@ -35,8 +36,10 @@ public class LinkedIn_Resume_Upload
 		}
 		catch(Exception e)
 		{
+			WebElement profile=driver.findElement(By.xpath("//header//*[name()='svg' and @id='person-accent-4']/following-sibling::img[contains(@src,'https://media.licdn.com/dms/image/v2/D5603AQGrbPwdEViStA/profile')]"));
+			wutils.waitUntilElementTobeVisible(driver, profile);
+			profile.click();
 			
-			driver.findElement(By.xpath("//header//*[name()='svg' and @id='person-accent-4']/following-sibling::img[contains(@src,'https://media.licdn.com/dms/image/v2/D5603AQGrbPwdEViStA/profile')]")).click();
 		}
 		
 		driver.findElement(By.xpath("//a[contains(.,'Settings & Privacy')]")).click();
