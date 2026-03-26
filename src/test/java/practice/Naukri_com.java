@@ -17,9 +17,12 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-@Listeners(genric_utilities.ListernersImplementationClass.class)
+//@Listeners(genric_utilities.ListernersImplementationClass.class)
+
+import genric_utilities.WebdriverUtilities;
 public class Naukri_com 
 {
+	WebdriverUtilities wUtils=new WebdriverUtilities();
 	@Test
 	public void updateResume() throws InterruptedException, AWTException {
 		
@@ -27,7 +30,7 @@ public class Naukri_com
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.naukri.com/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		Actions act=new Actions(driver);
 		driver.findElement(By.id("login_Layer")).click();
 		driver.findElement(By.xpath("//input[@placeholder='Enter your active Email ID / Username']")).sendKeys("pratheep.sv4009@gmail.com");
@@ -51,6 +54,7 @@ public class Naukri_com
 			String path = System.getProperty("user.dir")+"./src/test/resources/files/Pratheepraj-S Automation (2).pdf";
 			WebElement update = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
 			update.sendKeys(path);
+			Thread.sleep(6000);
 			
 //			StringSelection ss=new StringSelection("\"C:\\Users\\PRATHEEP RAJ S\\OneDrive\\Desktop\\Tek Resume\\fresh\\pratheepkumar561.docx\"");
 //			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
@@ -65,7 +69,9 @@ public class Naukri_com
 //			Thread.sleep(2000);
 //			rbt.keyPress(KeyEvent.VK_ENTER);
 //			rbt.keyRelease(KeyEvent.VK_ENTER);
+			
 			String actual = driver.findElement(By.xpath("//p[@class='msg']")).getText();
+			
 			System.err.println(actual);
 			Assert.assertEquals(actual, expected);
 			
