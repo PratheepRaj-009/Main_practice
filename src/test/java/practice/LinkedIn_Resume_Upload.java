@@ -31,14 +31,15 @@ public class LinkedIn_Resume_Upload
 		driver.findElement(By.xpath("//button[@data-litms-control-urn='login-submit']")).click();
 		try {
 			driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-border'and @role='presentation']")).click();
-			driver.findElement(By.xpath("//header//*[name()='svg' and @id='person-accent-4']/following-sibling::img[contains(@src,'https://media.licdn.com/dms/image/v2/D5603AQGrbPwdEViStA/profile')]")).click();
+			WebElement profile = driver.findElement(By.xpath("//header//*[name()='svg' and @id='person-accent-4']/following-sibling::img[contains(@src,'https://media.licdn.com/dms/image/v2/D5603AQGrbPwdEViStA/profile')]"));
+			wutils.clickOnElementByJavaSvcript(driver, profile);
 			
 		}
 		catch(Exception e)
 		{
 			WebElement profile=driver.findElement(By.xpath("//header//*[name()='svg' and @id='person-accent-4']/following-sibling::img[contains(@src,'https://media.licdn.com/dms/image/v2/D5603AQGrbPwdEViStA/profile')]"));
 			wutils.waitUntilElementTobeVisible(driver, profile);
-			profile.click();
+			wutils.clickOnElementByJavaSvcript(driver, profile);
 			
 		}
 		
