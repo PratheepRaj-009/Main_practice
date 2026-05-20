@@ -39,7 +39,7 @@ public class LinkedIn_Resume_Upload
 		{
 			WebElement profile=driver.findElement(By.xpath("//header//*[name()='svg' and @id='person-accent-4']/following-sibling::img"));
 			wutils.waitUntilElementTobeVisible(driver, profile);
-			wutils.clickOnElementByJavaSvcript(driver, profile);
+			profile.click();
 			
 		}
 		
