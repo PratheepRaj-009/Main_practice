@@ -37,7 +37,7 @@ public class LinkedIn_Resume_Upload
 		}
 		catch(Exception e)
 		{
-			WebElement profile=driver.findElement(By.xpath("//header//*[name()='svg' and @id='person-accent-4']/following-sibling::img"));
+			WebElement profile=driver.findElement(By.xpath("//*[name()='svg' and contains(@id,'person-accent')]/ancestor::span"));
 			wutils.waitUntilElementTobeVisible(driver, profile);
 			profile.click();
 			
