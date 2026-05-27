@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.LinkedIn_Resume_Upload">
+      <class name="practice.Naukri_com">
         <methods>
-          <include name="upload"/>
+          <include name="updateResume"/>
         </methods>
-      </class> <!-- practice.LinkedIn_Resume_Upload -->
+      </class> <!-- practice.Naukri_com -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
