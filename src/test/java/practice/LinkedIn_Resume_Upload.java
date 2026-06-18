@@ -26,9 +26,9 @@ public class LinkedIn_Resume_Upload
 		driver.get("https://www.linkedin.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.findElement(By.xpath("//a[contains(.,'Sign in with email')]")).click();
-		driver.findElement(By.id("username")).sendKeys(pUtils.readDataFromResPropertyFile("linkusername"));
-		driver.findElement(By.id("password")).sendKeys(pUtils.readDataFromResPropertyFile("password"));
-		driver.findElement(By.xpath("//button[@data-litms-control-urn='login-submit']")).click();
+		driver.findElement(By.xpath("//input[@type='email' and (@autocomplete='username webauthn' or @id='«Refvl3ksop9t5j6»')]")).sendKeys(pUtils.readDataFromResPropertyFile("linkusername"));
+		driver.findElement(By.xpath("(//input[@type='password' and @autocomplete='current-password' or @id='«R2nvl3ksop9t5j6»'])[2]")).sendKeys(pUtils.readDataFromResPropertyFile("password"));
+		driver.findElement(By.xpath("(//button[@data-litms-control-urn='login-submit' or .//span[.='Sign in']])[2]")).click();
 		try {
 			driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-border'and @role='presentation']")).click();
 			WebElement profile = driver.findElement(By.xpath("//header//*[name()='svg' and @id='person-accent-4']/following-sibling::img"));
