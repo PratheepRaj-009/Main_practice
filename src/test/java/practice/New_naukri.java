@@ -51,7 +51,7 @@ public class New_naukri
 		try {
 		if(driver.findElement(By.xpath("//span[text()='Upload resume']")).getText().contains("Upload resume"))
 		{
-			String path = System.getProperty("user.dir")+"./src/test/resources/files/pratheepte09 play.pdf";
+			String path = System.getProperty("user.dir")+".src/test/resources/files/Pratheep_Raj_te09.pdf";
 			WebElement update = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
 			update.sendKeys(path);
 			Thread.sleep(6000);
