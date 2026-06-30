@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-18T13:19:50 IST" name="Default suite" finished-at="2026-06-18T13:21:46 IST" duration-ms="116095">
+  <suite started-at="2026-06-30T08:31:32 IST" name="Default suite" finished-at="2026-06-30T08:32:17 IST" duration-ms="45059">
     <groups>
     </groups>
-    <test started-at="2026-06-18T13:19:50 IST" name="Default test" finished-at="2026-06-18T13:21:46 IST" duration-ms="116095">
-      <class name="practice.LinkedIn_Resume_Upload">
-        <test-method signature="upload()[pri:0, instance:practice.LinkedIn_Resume_Upload@14cd1699]" started-at="2026-06-18T13:19:50 IST" name="upload" finished-at="2026-06-18T13:21:46 IST" duration-ms="115951" status="PASS">
+    <test started-at="2026-06-30T08:31:32 IST" name="Default test" finished-at="2026-06-30T08:32:17 IST" duration-ms="45059">
+      <class name="practice.New_naukri">
+        <test-method signature="updateResume()[pri:0, instance:practice.New_naukri@71d44a3]" started-at="2026-06-30T08:31:32 IST" name="updateResume" finished-at="2026-06-30T08:32:17 IST" duration-ms="44924" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- upload -->
-      </class> <!-- practice.LinkedIn_Resume_Upload -->
+        </test-method> <!-- updateResume -->
+      </class> <!-- practice.New_naukri -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
