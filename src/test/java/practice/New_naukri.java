@@ -51,7 +51,7 @@ public class New_naukri
 		try {
 		if(driver.findElement(By.xpath("//span[text()='Upload resume']")).getText().contains("Upload resume"))
 		{
-			String path = System.getProperty("user.dir")+".src/test/resources/files/Pratheep_Raj_te09.pdf";
+			String path = System.getProperty("user.dir")+"./src/test/resources/files/Pratheep_Raj_te09.pdf";
 			WebElement update = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
 			update.sendKeys(path);
 			Thread.sleep(6000);
@@ -75,7 +75,7 @@ public class New_naukri
 			System.err.println(actual);
 			Assert.assertEquals(actual, expected);
 			
-			System.out.println("end.");
+			System.out.println("end");
 			
 		}
 		}
@@ -83,7 +83,7 @@ public class New_naukri
 		{
 		if(driver.findElement(By.xpath("//input[@value='Update resume']")).getAttribute("value").equals("Update resume"))
 		{
-			String path = System.getProperty("user.dir")+".src/test/resources/files/Pratheep_Raj_te09.pdf";
+			String path = System.getProperty("user.dir")+"./src/test/resources/files/pratheepte09 play.pdf";
 			WebElement update = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
 			update.sendKeys(path);
 //			StringSelection ss=new StringSelection("\"C:\\Users\\PRATHEEP RAJ S\\OneDrive\\Desktop\\Tek Resume\\fresh\\pratheepkumar561.docx\"");
