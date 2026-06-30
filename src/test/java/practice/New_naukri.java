@@ -75,7 +75,7 @@ public class New_naukri
 			System.err.println(actual);
 			Assert.assertEquals(actual, expected);
 			
-			System.out.println("end");
+			System.out.println("end.");
 			
 		}
 		}
