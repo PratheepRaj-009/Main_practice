@@ -52,7 +52,7 @@ public class LinkedIn_Resume_Upload
 		System.out.println(" ");
 		System.out.println(" ");
 		System.out.println("gud morning");
-		String path = System.getProperty("user.dir")+"/src/test/resources/files/Pratheepraj-S Automation (2).pdf";
+		String path = System.getProperty("user.dir")+"./src/test/resources/files/Pratheep_Raj_te09.pdf";
 		WebElement ele = driver.findElement(By.xpath("//input[@type='file']"));
 		ele.sendKeys(path);
 		driver.findElement(By.xpath("(//*[name()='svg' and @class='jobs-resume-card__ellipsis-icon'])[2]")).click();
