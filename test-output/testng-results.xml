@@ -2,47 +2,39 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-30T08:40:04 IST" name="Default suite" finished-at="2026-06-30T08:40:35 IST" duration-ms="30581">
+  <suite started-at="2026-09-09T00:47:27 IST" name="Suite" finished-at="2026-09-09T00:48:08 IST" duration-ms="40254">
     <groups>
     </groups>
-    <test started-at="2026-06-30T08:40:04 IST" name="Default test" finished-at="2026-06-30T08:40:35 IST" duration-ms="30581">
-      <class name="practice.New_naukri">
-        <test-method signature="updateResume()[pri:0, instance:practice.New_naukri@76505305]" started-at="2026-06-30T08:40:05 IST" name="updateResume" finished-at="2026-06-30T08:40:35 IST" duration-ms="30488" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidArgumentException">
+    <test started-at="2026-09-09T00:47:27 IST" name="Test" finished-at="2026-09-09T00:48:08 IST" duration-ms="40254">
+      <class name="contact.Contact_Test">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:contact.Contact_Test@3eb738bb]" started-at="2026-09-09T00:47:27 IST" name="connectToDB" finished-at="2026-09-09T00:47:27 IST" duration-ms="429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:contact.Contact_Test@3eb738bb]" started-at="2026-09-09T00:47:28 IST" name="launchBrowser" finished-at="2026-09-09T00:47:45 IST" duration-ms="17535" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:contact.Contact_Test@3eb738bb]" started-at="2026-09-09T00:47:45 IST" name="loginToApp" finished-at="2026-09-09T00:47:58 IST" duration-ms="12984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="contactwithMadatoryFields_test()[pri:-1, instance:contact.Contact_Test@3eb738bb]" started-at="2026-09-09T00:47:58 IST" name="contactwithMadatoryFields_test" finished-at="2026-09-09T00:48:00 IST" duration-ms="1631" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[invalid argument: File not found : C:\Users\PRATHEEP RAJ S\eclipse-workspace\main_Practice.src/test/resources/files/Pratheep_Raj_te09.pdf
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [23616a60945133d3596c90ca5d2808c2, sendKeysToElement {value=[Ljava.lang.CharSequence;@6722db6e, id=f.7BBB10E311A7F150BF42660E7F86592B.d.BDE9F8E9769A58194C690A1DA5F9198C.e.8619}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\PRATHE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58482}, goog:processID: 29292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58482/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (23616a60945133d3596c90ca5d2808c2)] -> xpath: (//input[@type='file'])[1]]
-Session ID: 23616a60945133d3596c90ca5d2808c2]]>
+              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because "sheet" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\PRATHEEP RAJ S\eclipse-workspace\main_Practice.src/test/resources/files/Pratheep_Raj_te09.pdf
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [23616a60945133d3596c90ca5d2808c2, sendKeysToElement {value=[Ljava.lang.CharSequence;@6722db6e, id=f.7BBB10E311A7F150BF42660E7F86592B.d.BDE9F8E9769A58194C690A1DA5F9198C.e.8619}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\PRATHE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58482}, goog:processID: 29292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58482/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (23616a60945133d3596c90ca5d2808c2)] -> xpath: (//input[@type='file'])[1]]
-Session ID: 23616a60945133d3596c90ca5d2808c2
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-at practice.New_naukri.updateResume(New_naukri.java:88)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because "sheet" is null
+at genric_utilities.ExcelUtilities.readDataFromExcel(ExcelUtilities.java:30)
+at contact.Contact_Test.contactwithMadatoryFields_test(Contact_Test.java:136)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -57,25 +49,31 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateResume -->
-      </class> <!-- practice.New_naukri -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- contactwithMadatoryFields_test -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:contact.Contact_Test@3eb738bb]" started-at="2026-09-09T00:48:00 IST" name="logoutFromApp" finished-at="2026-09-09T00:48:07 IST" duration-ms="6892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:contact.Contact_Test@3eb738bb]" started-at="2026-09-09T00:48:07 IST" name="closeBrowser" finished-at="2026-09-09T00:48:08 IST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="disConnectDB()[pri:0, instance:contact.Contact_Test@3eb738bb]" started-at="2026-09-09T00:48:08 IST" name="disConnectDB" finished-at="2026-09-09T00:48:08 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectDB -->
+      </class> <!-- contact.Contact_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
